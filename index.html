@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Personal Book</title>
+    <script src="https://kit.fontawesome.com/fa305eed6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="book.png" class="logo">
+            <ul>
+                 <li><i class="fa fa-bell"  ><span id="noticount">3</span></i></li>
+                <li><i class='fas fa-comment-alt' ></i></li>
+                <li><i class="fas fa-video"></i></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="serach-box">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="serach">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsmenutoggle()">
+                <img src="profile.jpg" height="59px">
+            </div>
+        </div>
+
+            <!-- ------------------------Drop down menu  -------------------------->
+        <div class="settings-menu">
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="profile.jpg">
+                    <div>
+                        <p>Abhi Rathod</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="user-profile">
+                    <img src="spam.png">
+                    <div>
+                        <p>notification</p>
+                        <a href="#">1 friend Request</a>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="setting-links">
+                    <img src="setting.jpg" width="20pc" class="settings-icon">
+                    <a href="#">link to insta <img src="arrow.png" width="10px"> </a>
+                  </div>
+                  <div class="setting-links">
+                    <img src="notification.jpg" width="20pc" class="settings-icon">
+                    <a href="#">link to insta <img src="arrow.png" width="10px"></a>
+                  </div>
+                  <div class="setting-links">
+                    <img src="instagram.png" width="20pc" class="settings-icon">
+                    <a href="#">link to insta <img src="arrow.png" width="10px"></a>
+                  </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+        <!------------------------left-side bar---------------------->
+        <div class="left-side-bar">
+               <div class="imp-links">
+                <a href="#" onclick="friends_list()"><img src="newa.png">Latest News</a>
+                <a href="#" onclick="friendsrow()"> <img src="friend.png">Friends</a>
+                <a href="#"><img src="group.png">Groups</a>
+                <a href="#"><img src="cart1.png">Metro Cart</a>
+                <a href="#"><img src="video.png">Live Videos</a>
+                <a href="#">See more..</a>
+               </div>
+               <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="web developer.jpg" alt="">Web developers</a>
+                <a href="#"><img src="desingner.jpg">desingner</a>
+                <a href="#"><img src="full stack.jpg" alt="">full Stack developer</a>
+                <a href="#"><img src="codet.jpg">Code Now</a>
+                <a href="#"><img src="new jobs.jpg">Jobs Alerts</a>
+               </div>
+
+        </div>
+
+          <!----------------------------------------------Main Content Starts here---------------------------------------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1" >
+                     <img src="pose.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="heroine1.jpg" height="47px">
+                    <p>Abhi R</p>
+                </div>
+                <div class="story story3">
+                    <img src="heroine2.jpg" height="47px">
+                    <p>Priya</p>
+                </div>
+                <div class="story story4">
+                    <img src="heroine3.jpg" height="47px">
+                    <p>Ashwini</p>
+                </div>
+                <div class="story story5">
+                    <img src="heroine5.jpg" height="47px">
+                    <p>Chetan</p>
+                </div>
+            </div>
+              <div class="write-post-container">
+                  <div class="user-profile">
+                    <img src="Allu.jpg">
+                    <div>
+                        <p>Harry Ellison</p>
+                        <small>Public <i class="fa-sharp fa-solid fa-caret-down"></i></small>
+                    </div>
+                  </div>
+                  <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind? harry.."></textarea>
+                    <div class="atpost-links">
+                        <a href="#"><img src="vid.png">live Video</a>
+                        <a href="#"><img src="pho.png">Upload pic</a>
+                        <a href="#"><img src="smile.png">Feeling</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Allu.jpg">
+                        <div>
+                            <p>Harry Ellison</p>
+                            <span>June 21 2023, 13:40 pm</span>
+                        </div>
+                      </div>
+                      <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                  <p class="post-text">Subscribe<span>@Abhi Classes</span> login your details by clicking down to learn more<a href="#">#Easy tutorials</a>
+                <a href="#">#Youtube channel</a></p>
+                <img src="feed1.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                         <div><img src="like.png">120 Likes</div>
+                         <div><img src="comment1.png">12 Comments</div>
+                         <div><img src="share.jpg">5 shares</div>
+                    </div>
+                    <div class="post-profile-icon">
+                       <img src="heroine2.jpg"> <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Allu.jpg">
+                        <div>
+                            <p>Harry Ellison</p>
+                            <span>June 21 2023, 13:40 pm</span>
+                        </div>
+                      </div>
+                      <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                  <p class="post-text">Subscribe<span>@Abhi Classes</span> login your details by clicking down to learn more<a href="#">#Easy tutorials</a>
+                <a href="#">#Youtube channel</a></p>
+                <img src="post2.jpg" class="post-img" height="750px">
+                <div class="post-row">
+                    <div class="activity-icons">
+                         <div><img src="like.png">120</div>
+                         <div><img src="comment1.png">12</div>
+                         <div><img src="share.jpg">5</div>
+                    </div>
+                    <div class="post-profile-icon">
+                       <img src="heroine2.jpg"> <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Allu.jpg">
+                        <div>
+                            <p>Harry Ellison</p>
+                            <span>June 21 2023, 13:40 pm</span>
+                        </div>
+                      </div>
+                      <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                  <p class="post-text">Subscribe<span>@Abhi Classes</span> login your details by clicking down to learn more<a href="#">#Easy tutorials</a>
+                <a href="#">#Youtube channel</a></p>
+                <img src="abhir (1).jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                         <div><img src="like.png">120</div>
+                         <div><img src="comment1.png">12</div>
+                         <div><img src="share.jpg">5</div>
+                    </div>
+                    <div class="post-profile-icon">
+                       <img src="heroine2.jpg"> <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+              </div>
+        </div>
+             <!----------------------------------------------Main content Ends here---------------------------------------- -->
+          <!------------------------Right-side bar-->
+        <div class="right-side-bar">
+           <div class="sidebar-title">
+            <h4>Events</h4>
+            <a href="#">See All</a>
+           </div>
+              
+            <div class="event">
+                <div class="left-event">
+                    <h3>19</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                 <h4>Social Media</h4>
+                 <p><i class="fa-sharp fa-solid fa-location-dot"></i>Poo Birthday</p>
+                 <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>04</h3>
+                    <span>August</span>
+                </div>
+                <div class="right-event">
+                 <h4>Crazy Kid</h4>
+                 <p><i class="fa-sharp fa-solid fa-location-dot"></i>Abhi's Birthday</p>
+                 <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+               </div>
+               <img src="ads.jpg" class="side-bar-ads">
+               <div class="sidebar-title">
+                <h4>Conversation(25)</h4>
+                <a href="#">Hide Chat</a>
+               </div>
+
+               <div class="online-list">
+                 <div class="online">
+                    <img src="member-1.jpg">
+                 </div>
+                 <p>Abhishek R</p>
+               </div>
+               <div class="online-list">
+                <div class="online">
+                   <img src="member-2.jpg">
+                </div>
+                <p>Sunanda</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                   <img src="member-3.jpg">
+                </div>
+                <p>Ashu</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                   <img src="member-4.jpg">
+                </div>
+                <p>Ashwini R</p>
+              </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; 2023 Abhi's Profile</p>
+    </div>
+        
+    
+    <!-- modal class  -->
+             <!-- Modal -->
+   <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      Modal content
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Friends_list</h4>
+        </div>
+        <div class="modal-body">
+          <p> venu </p>
+          <p> luyakr</p>
+          <p> abhishek</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      </div>
+    </div>
+     <script src="script.js"></script>
+
+</body>
+</html> 
